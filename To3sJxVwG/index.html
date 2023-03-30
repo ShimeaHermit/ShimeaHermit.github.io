@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>给网站增加了可互动的看板娘 | Shimea&#39;s Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://shimeahermit.github.io/favicon.ico?v=1680193602189">
+<link rel="stylesheet" href="https://shimeahermit.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-261745538-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-261745538-1');
+</script>
+
+
+    <meta name="description" content="看板娘仅在pc下可见
+
+基于up主“有云转晴”的教学制作的
+代码如下，插入indexl.html的&lt;head&gt;&lt;head&gt;之间即可
+&lt;!--看板娘 -自定义大小，隐藏对话框和对话框高度--&gt;
+&lt;st..." />
+    <meta name="keywords" content="网站维护" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://shimeahermit.github.io">
+        <img src="https://shimeahermit.github.io/images/avatar.png?v=1680193602189" class="site-logo">
+        <h1 class="site-title">Shimea&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/ShimeaHermit" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      米果的个人博客
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://shimeahermit.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">给网站增加了可互动的看板娘</h2>
+            <div class="post-date">2023-03-30</div>
+            
+            <div class="post-content" v-pre>
+              <p>看板娘仅在pc下可见</p>
+<!-- more -->
+<p>基于up主“有云转晴”的教学制作的<br>
+代码如下，插入indexl.html的&lt;head&gt;&lt;head&gt;之间即可<br>
+&lt;!--看板娘 -自定义大小，隐藏对话框和对话框高度--&gt;<br>
+&lt;style type=&quot;text/css&quot;&gt;<br>
+#waifu #live2d {<br>
+height: 300px!important;<br>
+width: 300px!important;<br>
+}<br>
+#waifu-tips {<br>
+top: -60px;<br>
+/<em>display:none !important; #隐藏对话框（删除/即可隐藏对话）</em>/<br>
+}&lt;/style&gt;<br>
+&lt;!--看板娘加载指定模型--&gt;</p>
+<p>&lt;script&gt;<br>
+localStorage.setItem('modelId', '24');  /<em>选择角色</em>/<br>
+localStorage.setItem('modelTexturesId', '1');/<em>选择衣服（皮肤）</em>/<br>
+/<em>插入后F12查看元素即可查看对应角色和皮肤的代号</em>/<br>
+&lt;/script&gt;</p>
+<p>&lt;!--配置看板娘左右位置--&gt;</p>
+<p>&lt;script src=&quot;https://api.itggg.cn/live2dnew/left/index.js&quot;&gt;&lt;/script&gt;</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://shimeahermit.github.io/01vDo3HnA/" class="tag">
+                    网站维护
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://shimeahermit.github.io/html-zi-ti-diao-zheng/">
+                  <h3 class="post-title">
+                    HTML字体调整
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'a8a1bf52509e2c466fee',
+        clientSecret: 'dff5fc916613fad702a491465ac71de4ae11f330',
+        repo: 'gitalk-comments',
+        owner: 'shimeahermit',
+        admin: ['shimeahermit'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

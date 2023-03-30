@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://shimeahermit.github.io</id>
+    <title>Shimea&apos;s Blog</title>
+    <updated>2023-03-30T16:28:29.694Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://shimeahermit.github.io"/>
+    <link rel="self" href="https://shimeahermit.github.io/atom.xml"/>
+    <subtitle>米果的个人博客</subtitle>
+    <logo>https://shimeahermit.github.io/images/avatar.png</logo>
+    <icon>https://shimeahermit.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, Shimea&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[给网站增加了可互动的看板娘]]></title>
+        <id>https://shimeahermit.github.io/To3sJxVwG/</id>
+        <link href="https://shimeahermit.github.io/To3sJxVwG/">
+        </link>
+        <updated>2023-03-30T14:26:50.000Z</updated>
+        <summary type="html"><![CDATA[<p>看板娘仅在pc下可见</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>看板娘仅在pc下可见</p>
+<!-- more -->
+<p>基于up主“有云转晴”的教学制作的<br>
+代码如下，插入indexl.html的&lt;head&gt;&lt;head&gt;之间即可<br>
+&lt;!--看板娘 -自定义大小，隐藏对话框和对话框高度--&gt;<br>
+&lt;style type=&quot;text/css&quot;&gt;<br>
+#waifu #live2d {<br>
+height: 300px!important;<br>
+width: 300px!important;<br>
+}<br>
+#waifu-tips {<br>
+top: -60px;<br>
+/<em>display:none !important; #隐藏对话框（删除/即可隐藏对话）</em>/<br>
+}&lt;/style&gt;<br>
+&lt;!--看板娘加载指定模型--&gt;</p>
+<p>&lt;script&gt;<br>
+localStorage.setItem('modelId', '24');  /<em>选择角色</em>/<br>
+localStorage.setItem('modelTexturesId', '1');/<em>选择衣服（皮肤）</em>/<br>
+/<em>插入后F12查看元素即可查看对应角色和皮肤的代号</em>/<br>
+&lt;/script&gt;</p>
+<p>&lt;!--配置看板娘左右位置--&gt;</p>
+<p>&lt;script src=&quot;https://api.itggg.cn/live2dnew/left/index.js&quot;&gt;&lt;/script&gt;</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[HTML字体调整]]></title>
+        <id>https://shimeahermit.github.io/html-zi-ti-diao-zheng/</id>
+        <link href="https://shimeahermit.github.io/html-zi-ti-diao-zheng/">
+        </link>
+        <updated>2023-03-30T09:18:38.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p><font color="red">调整字体大小：</font><br>
+&lt;font size=&quot;1&quot;&gt; 要调整的字体&lt;br/&gt;<br>
+<em>要调整字体大小改变数字“1”的大小即可</em></p>
+<p><font color="red">调整字体居中:</font><br>
+&lt;p align=&quot;center&quot;&gt;要调整的字体&lt;/p&gt;</p>
+<p><font color="red">调整字体居中+大小：</font><br>
+&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;1&quot;&gt;要调整的字体<br/>&lt;/p&gt;</p>
+<p><font color="green">注释：</font><br>
+&lt;!--注释--&gt;</p>
+<p><font color="blue">字体颜色：</font><br>
+&lt;font color=&quot;red&quot;&gt;调整的字体&lt;/font&gt;</p>
+<p>red改为其它单词可以更改颜色</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[可以自由浏览金字塔内部的网站]]></title>
+        <id>https://shimeahermit.github.io/ke-yi-zi-you-liu-lan-jin-zi-ta-nei-bu-de-wang-zhan/</id>
+        <link href="https://shimeahermit.github.io/ke-yi-zi-you-liu-lan-jin-zi-ta-nei-bu-de-wang-zhan/">
+        </link>
+        <updated>2023-03-30T08:56:40.000Z</updated>
+        <summary type="html"><![CDATA[<p>今天发现了一个很有意思的网站，可以在线浏览金字塔内部。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今天发现了一个很有意思的网站，可以在线浏览金字塔内部。</p>
+<!-- more -->
+<p>https://giza.mused.org/zh-hans/<br>
+该网站支持中文，第一次进入需要一点时间加载。</p>
+<p>作者设置了很多一定距离间隔的点位，可以通过点位移动场景。场景可以自由放大，360度浏览，不过点位上下处会因为摄像机技术的原因出现马赛克，有些地方远处还会出现游客的身影。<br>
+<img src="https://shimeahermit.github.io/post-images/1680166753634.png" alt="" loading="lazy"><br>
+也可以点击下一个，即可按作者设定好的路线前进，同时会搭配一段文字/图片说明，点击图片可以放大。</p>
+<p>左下角有三个选项，分别是：查看总览图，查看平面图，测量模式。<br>
+可以使用全览图快速移动，也可以使用测量功能自由测出不同地方的距离数据。</p>
+<figure data-type="image" tabindex="1"><img src="https://shimeahermit.github.io/post-images/1680166872957.png" alt="" loading="lazy"></figure>
+<p align="center"><font size="2"> 平面图</font><br/></p>
+<p>该网页不仅提供了入口处的图像，还有许多其他项目，如梅里桑克三世女王墓和胡夫哈夫一世墓等。<br>
+<img src="https://shimeahermit.github.io/post-images/1680166967895.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[博客访问过慢/失败的问题]]></title>
+        <id>https://shimeahermit.github.io/bo-ke-fang-wen-guo-man-shi-bai-de-wen-ti/</id>
+        <link href="https://shimeahermit.github.io/bo-ke-fang-wen-guo-man-shi-bai-de-wen-ti/">
+        </link>
+        <updated>2023-03-28T09:44:12.000Z</updated>
+        <summary type="html"><![CDATA[<p>在我给博客插入一些图片后，我发现博客的加载速度变得非常慢，甚至有时候会进不来，但是同时我的朋友又能正常访问，为此我寻找了一些解决方法</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在我给博客插入一些图片后，我发现博客的加载速度变得非常慢，甚至有时候会进不来，但是同时我的朋友又能正常访问，为此我寻找了一些解决方法</p>
+<!-- more -->
+<p>1.vercel注册二级域名，注册成功了，域名https://shimea-hermit-github-io.vercel.app 但是其实访问速度还是很慢，并没有实质性的改变，而且这个域名不好记，故放弃此方案。</p>
+<p>2.国内coding平台部署博客  coding是腾讯代理的类似github一样的网站，但是coding更新了，现在coding pages服务已关闭，网络上的教程不再适用，故放弃此方案。</p>
+<p>3.CLOUDFLARE网站加速服务，选择了免费的项目，加速后网站访问速度正常，图片加载也很流畅，博客访问过慢/失败的问题完美解决。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023 年度水下摄影师奖]]></title>
+        <id>https://shimeahermit.github.io/2023-nian-du-shui-xia-she-ying-shi-jiang/</id>
+        <link href="https://shimeahermit.github.io/2023-nian-du-shui-xia-she-ying-shi-jiang/">
+        </link>
+        <updated>2023-03-27T14:19:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>摘选了一些我喜欢的照片</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>摘选了一些我喜欢的照片</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://shimeahermit.github.io/post-images/1679926879942.jpg" alt="" loading="lazy"></figure>
+<!-- more -->
+<p>作者：Rebekah Brandes<br>
+<img src="https://shimeahermit.github.io/post-images/1679926915823.webp" alt="" loading="lazy"></p>
+<!-- more -->
+<p>作者：Suliman Alatiqi<br>
+<img src="https://shimeahermit.github.io/post-images/1679926952486.webp" alt="" loading="lazy"></p>
+<!-- more -->
+<p>作者：Tony Reed<br>
+<img src="https://shimeahermit.github.io/post-images/1679926980899.webp" alt="" loading="lazy"></p>
+<!-- more -->
+<p>作者：Brett Eldridge<br>
+<img src="https://shimeahermit.github.io/post-images/1679927011581.webp" alt="" loading="lazy"></p>
+<!-- more -->
+<p>作者：J. Gregory Sherman<br>
+<img src="https://shimeahermit.github.io/post-images/1679927030821.webp" alt="" loading="lazy"><br>
+作者：Shane Gross<br>
+<img src="https://shimeahermit.github.io/post-images/1679927057017.webp" alt="" loading="lazy"></p>
+<!-- more -->
+<p>作者：Yury Ivanov</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Github令牌自动移除问题]]></title>
+        <id>https://shimeahermit.github.io/github-ling-pai-zi-dong-yi-chu-wen-ti/</id>
+        <link href="https://shimeahermit.github.io/github-ling-pai-zi-dong-yi-chu-wen-ti/">
+        </link>
+        <updated>2023-03-26T13:46:43.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p>在Gridea上一同步文章，github令牌就因为风险自动被移除，导致后续无法再次同步，目前还不知道为什么，此问题偶尔发生，有时候同步后不会发生（按理来说应该是这样才对）——2023.3.26</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[欢迎来到米果的个人博客]]></title>
+        <id>https://shimeahermit.github.io/huan-ying-lai-dao-mi-guo-de-ge-ren-bo-ke/</id>
+        <link href="https://shimeahermit.github.io/huan-ying-lai-dao-mi-guo-de-ge-ren-bo-ke/">
+        </link>
+        <updated>2023-03-26T09:45:13.000Z</updated>
+        <summary type="html"><![CDATA[<p>欢迎来到我的个人博客🙌，我会在这里记录一些我个人感兴趣的东西，希望自己可以坚持下去，大家一起进步✍️——2023.3.26</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>欢迎来到我的个人博客🙌，我会在这里记录一些我个人感兴趣的东西，希望自己可以坚持下去，大家一起进步✍️——2023.3.26</p>
+<!-- more -->
+<p>该博客建设基于知乎答主@枫叶的“个人博客第1-8篇”，搭配Gridea使用。</p>
+]]></content>
+    </entry>
+</feed>
