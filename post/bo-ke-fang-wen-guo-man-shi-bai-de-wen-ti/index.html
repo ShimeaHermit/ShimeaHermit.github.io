@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<meta name="generator" content="Gridea Pro 1.1.1">
+<title>博客访问过慢/失败的问题 | Shimea&#39;s Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="/favicon.ico?v=1777407082">
+<link rel="stylesheet" href="/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="网站维护" />
+  <meta name="description" content="在我给博客插入一些图片后，我发现博客的加载速度变得非常慢，甚至有时候会进不来，但是同时我的朋友又能正常访问，为此我寻找了一些解决方法 1.vercel注册二级域名，注册成功了，域名https://shimea-hermit-github-io.vercel.app 但是其实访问速度还是很慢，并没有实质性的改变，而且这个域名不好记，故放弃此方案。 2.国内coding平台部署博客 coding&amp;hellip;">
+<link rel="canonical" href="https://shimeahermit.github.io/post/bo-ke-fang-wen-guo-man-shi-bai-de-wen-ti/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"博客访问过慢/失败的问题","url":"https://shimeahermit.github.io/post/bo-ke-fang-wen-guo-man-shi-bai-de-wen-ti/","description":"在我给博客插入一些图片后，我发现博客的加载速度变得非常慢，甚至有时候会进不来，但是同时我的朋友又能正常访问，为此我寻找了一些解决方法 1.vercel注册二级域名，注册成功了，域名https://shimea-hermit-github-io.vercel.app 但是其实访问速度还是很慢，并没有实质性的改变，而且这个域名不好记，故放弃此方案。 2.国内coding平台部署博客 coding\u0026hellip;","datePublished":"2023-03-28T12:00:00+08:00","dateModified":"2026-04-29T04:09:26+08:00","author":{"@type":"Person","name":"Shimea's Blog"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/avatar.png"},"name":"Shimea's Blog"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://shimeahermit.github.io","name":"Shimea's Blog","position":1},{"@type":"ListItem","item":"https://shimeahermit.github.io/post/bo-ke-fang-wen-guo-man-shi-bai-de-wen-ti/","name":"博客访问过慢/失败的问题","position":2}]}</script>
+<meta property="og:title" content="博客访问过慢/失败的问题">
+<meta property="og:description" content="在我给博客插入一些图片后，我发现博客的加载速度变得非常慢，甚至有时候会进不来，但是同时我的朋友又能正常访问，为此我寻找了一些解决方法 1.vercel注册二级域名，注册成功了，域名https://shimea-hermit-github-io.vercel.app 但是其实访问速度还是很慢，并没有实质性的改变，而且这个域名不好记，故放弃此方案。 2.国内coding平台部署博客 coding&amp;hellip;">
+<meta property="og:url" content="https://shimeahermit.github.io/post/bo-ke-fang-wen-guo-man-shi-bai-de-wen-ti/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Shimea's Blog">
+<meta property="og:image" content="/images/avatar.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://shimeahermit.github.io/post/bo-ke-fang-wen-guo-man-shi-bai-de-wen-ti/">
+<meta name="twitter:title" content="博客访问过慢/失败的问题">
+<meta name="twitter:description" content="在我给博客插入一些图片后，我发现博客的加载速度变得非常慢，甚至有时候会进不来，但是同时我的朋友又能正常访问，为此我寻找了一些解决方法 1.vercel注册二级域名，注册成功了，域名https://shimea-hermit-github-io.vercel.app 但是其实访问速度还是很慢，并没有实质性的改变，而且这个域名不好记，故放弃此方案。 2.国内coding平台部署博客 coding&amp;hellip;">
+<meta name="twitter:image" content="/images/avatar.png">
+</head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="/">
+        <img src="/images/avatar.png?v=1777407082" class="site-logo">
+        <h1 class="site-title">Shimea&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/post" class="site-nav">
+            博客
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/ShimeaHermit" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      米果的个人博客
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="/feed.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">博客访问过慢/失败的问题</h2>
+            <div class="post-date">2023-03-28</div>
+            
+            <div class="post-content" v-pre>
+              <p>在我给博客插入一些图片后，我发现博客的加载速度变得非常慢，甚至有时候会进不来，但是同时我的朋友又能正常访问，为此我寻找了一些解决方法</p>
+<p>1.vercel注册二级域名，注册成功了，域名https://shimea-hermit-github-io.vercel.app 但是其实访问速度还是很慢，并没有实质性的改变，而且这个域名不好记，故放弃此方案。</p>
+<p>2.国内coding平台部署博客  coding是腾讯代理的类似github一样的网站，但是coding更新了，现在coding pages服务已关闭，网络上的教程不再适用，故放弃此方案。</p>
+<p>3.CLOUDFLARE网站加速服务，选择了免费的项目，加速后网站访问速度正常，图片加载也很流畅，博客访问过慢/失败的问题完美解决。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="/tag/wang-zhan-wei-hu/" class="tag">
+                    网站维护
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="/post/2023-nian-du-shui-xia-she-ying-shi-jiang/">
+                  <h3 class="post-title">
+                    2023 年度水下摄影师奖
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  <script>console.log("\n%c ✦ Gridea Pro v1.1.1 %c · Theme: simple v1.1.0 · https://gridea.pro %c\n","color:#fadfa3;background:#111111;padding:9px 14px;border-radius:4px 0 0 4px;font-weight:500;font-size:12px","color:#e05c00;background:#fff3ec;padding:9px 14px;border-radius:0 4px 4px 0;font-size:11px","")</script>
+</body>
+</html>
