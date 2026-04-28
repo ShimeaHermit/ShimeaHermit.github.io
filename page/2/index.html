@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="/favicon.ico?v=1777409859">
+<link rel="shortcut icon" href="/favicon.ico?v=1777410104">
 <link rel="stylesheet" href="/styles/main.css">
 
 
@@ -18,20 +18,16 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <!-- 看板娘 Live2D -->
-<style type="text/css">
-#waifu #live2d {
-  height: 300px!important;
-  width: 300px!important;
-}
-#waifu-tips {
-  top: -60px;
-}
-</style>
+<link rel="stylesheet" href="https://unpkg.com/live2d-widget@3.1.4/lib/L2Dwidget.min.css">
+<script src="https://unpkg.com/live2d-widget@3.1.4/lib/L2Dwidget.min.js"></script>
 <script>
-localStorage.setItem('modelId', '24');
-localStorage.setItem('modelTexturesId', '1');
+  L2Dwidget.init({
+    model: { scale: 1, hHeadPos: 0.5, vHeadPos: 0.5, jsonPath: 'https://unpkg.com/live2d-widget-models@1.0.1/assets/shizuku/model.json' },
+    display: { position: 'left', width: 200, height: 300 },
+    mobile: { show: true },
+    react: { opacityDefault: 0.9 }
+  });
 </script>
-<script src="https://api.itggg.cn/live2dnew/left/index.js"></script>
 
 
 
@@ -61,7 +57,7 @@ localStorage.setItem('modelTexturesId', '1');
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="/">
-        <img src="/images/avatar.png?v=1777409859" class="site-logo">
+        <img src="/images/avatar.png?v=1777410104" class="site-logo">
         <h1 class="site-title">Shimea&#39;s Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
