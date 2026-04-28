@@ -9,13 +9,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="/favicon.ico?v=1777409684">
+<link rel="shortcut icon" href="/favicon.ico?v=1777409845">
 <link rel="stylesheet" href="/styles/main.css">
 
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<!-- 看板娘 Live2D -->
+<style type="text/css">
+#waifu #live2d {
+  height: 300px!important;
+  width: 300px!important;
+}
+#waifu-tips {
+  top: -60px;
+}
+</style>
+<script>
+localStorage.setItem('modelId', '24');
+localStorage.setItem('modelTexturesId', '1');
+</script>
+<script src="https://api.itggg.cn/live2dnew/left/index.js"></script>
 
 
 
@@ -42,7 +58,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="/">
-        <img src="/images/avatar.png?v=1777409684" class="site-logo">
+        <img src="/images/avatar.png?v=1777409845" class="site-logo">
         <h1 class="site-title">Shimea&#39;s Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -124,17 +140,26 @@
                   2023-03-30
                 </div>
                 <div class="post-abstract">
-                  <p>调整字体大小：</p>
-<p><!-- raw HTML omitted --> 要调整的字体<!-- raw HTML omitted --></p>
-<p><em>要调整字体大小改变数字“1”的大小即可</em></p>
-<p>调整字体居中:</p>
-<!-- raw HTML omitted -->
-<p>调整字体居中+大小：</p>
-<!-- raw HTML omitted -->
-<p>注释：</p>
-<!-- raw HTML omitted -->
-<p>字体颜色：</p>
-<p><!-- raw HTML omitted -->调&hellip;</p>
+                  <pre><code class="language-html">调整字体大小：
+
+&lt;font size=&quot;1&quot;&gt; 要调整的字体&lt;br/&gt;
+
+*要调整字体大小改变数字“1”的大小即可*
+
+调整字体居中:
+
+&lt;p align=&quot;center&quot;&gt;要调整的字体&lt;/p&gt;
+
+调整字体居中+大小：
+
+&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;1&quot;&gt;要调整的字体
+&lt;/p&gt;
+
+注释：
+
+&lt;!--注释--&gt;
+...
+</code></pre>
 
                 </div>
               </div>

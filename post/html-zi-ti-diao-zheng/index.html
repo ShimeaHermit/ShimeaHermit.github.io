@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="/favicon.ico?v=1777409684">
+<link rel="shortcut icon" href="/favicon.ico?v=1777409845">
 <link rel="stylesheet" href="/styles/main.css">
 
 
@@ -17,16 +17,32 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+<!-- 看板娘 Live2D -->
+<style type="text/css">
+#waifu #live2d {
+  height: 300px!important;
+  width: 300px!important;
+}
+#waifu-tips {
+  top: -60px;
+}
+</style>
+<script>
+localStorage.setItem('modelId', '24');
+localStorage.setItem('modelTexturesId', '1');
+</script>
+<script src="https://api.itggg.cn/live2dnew/left/index.js"></script>
+
 
 
     <meta name="description" content="" />
     <meta name="keywords" content="网站维护" />
-  <meta name="description" content="调整字体大小： 要调整的字体 要调整字体大小改变数字“1”的大小即可 调整字体居中: 调整字体居中+大小： 注释： 字体颜色： 调&amp;hellip;">
+  <meta name="description" content="调整字体大小： &amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt; 要调整的字体&amp;lt;br/&amp;gt; *要调整字体大小改变数字“1”的大小即可* 调整字体居中: &amp;lt;p align=&amp;quot;center&amp;quot;&amp;gt;要调整的字体&amp;lt;/p&amp;gt; 调整字体居中+大小： &amp;lt;p align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;要调整的字体 &amp;lt;/p&amp;gt; 注释： &amp;lt;!--注释--&amp;gt; ...">
 <link rel="canonical" href="https://shimeahermit.github.io/post/html-zi-ti-diao-zheng/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"HTML字体调整","url":"https://shimeahermit.github.io/post/html-zi-ti-diao-zheng/","description":"调整字体大小： 要调整的字体 要调整字体大小改变数字“1”的大小即可 调整字体居中: 调整字体居中+大小： 注释： 字体颜色： 调\u0026hellip;","datePublished":"2023-03-30T12:00:00+08:00","dateModified":"2026-04-29T04:09:26+08:00","author":{"@type":"Person","name":"Shimea's Blog"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/avatar.png"},"name":"Shimea's Blog"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"HTML字体调整","url":"https://shimeahermit.github.io/post/html-zi-ti-diao-zheng/","description":"调整字体大小： \u0026lt;font size=\u0026quot;1\u0026quot;\u0026gt; 要调整的字体\u0026lt;br/\u0026gt; *要调整字体大小改变数字“1”的大小即可* 调整字体居中: \u0026lt;p align=\u0026quot;center\u0026quot;\u0026gt;要调整的字体\u0026lt;/p\u0026gt; 调整字体居中+大小： \u0026lt;p align=\u0026quot;center\u0026quot;\u0026gt;\u0026lt;font size=\u0026quot;1\u0026quot;\u0026gt;要调整的字体 \u0026lt;/p\u0026gt; 注释： \u0026lt;!--注释--\u0026gt; ...","datePublished":"2023-03-30T12:00:00+08:00","dateModified":"2026-04-29T04:56:36+08:00","author":{"@type":"Person","name":"Shimea's Blog"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/images/avatar.png"},"name":"Shimea's Blog"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://shimeahermit.github.io","name":"Shimea's Blog","position":1},{"@type":"ListItem","item":"https://shimeahermit.github.io/post/html-zi-ti-diao-zheng/","name":"HTML字体调整","position":2}]}</script>
 <meta property="og:title" content="HTML字体调整">
-<meta property="og:description" content="调整字体大小： 要调整的字体 要调整字体大小改变数字“1”的大小即可 调整字体居中: 调整字体居中+大小： 注释： 字体颜色： 调&amp;hellip;">
+<meta property="og:description" content="调整字体大小： &amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt; 要调整的字体&amp;lt;br/&amp;gt; *要调整字体大小改变数字“1”的大小即可* 调整字体居中: &amp;lt;p align=&amp;quot;center&amp;quot;&amp;gt;要调整的字体&amp;lt;/p&amp;gt; 调整字体居中+大小： &amp;lt;p align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;要调整的字体 &amp;lt;/p&amp;gt; 注释： &amp;lt;!--注释--&amp;gt; ...">
 <meta property="og:url" content="https://shimeahermit.github.io/post/html-zi-ti-diao-zheng/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Shimea's Blog">
@@ -34,7 +50,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://shimeahermit.github.io/post/html-zi-ti-diao-zheng/">
 <meta name="twitter:title" content="HTML字体调整">
-<meta name="twitter:description" content="调整字体大小： 要调整的字体 要调整字体大小改变数字“1”的大小即可 调整字体居中: 调整字体居中+大小： 注释： 字体颜色： 调&amp;hellip;">
+<meta name="twitter:description" content="调整字体大小： &amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt; 要调整的字体&amp;lt;br/&amp;gt; *要调整字体大小改变数字“1”的大小即可* 调整字体居中: &amp;lt;p align=&amp;quot;center&amp;quot;&amp;gt;要调整的字体&amp;lt;/p&amp;gt; 调整字体居中+大小： &amp;lt;p align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;要调整的字体 &amp;lt;/p&amp;gt; 注释： &amp;lt;!--注释--&amp;gt; ...">
 <meta name="twitter:image" content="/images/avatar.png">
 </head>
   <body>
@@ -44,7 +60,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="/">
-        <img src="/images/avatar.png?v=1777409684" class="site-logo">
+        <img src="/images/avatar.png?v=1777409845" class="site-logo">
         <h1 class="site-title">Shimea&#39;s Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -102,19 +118,31 @@
             <div class="post-date">2023-03-30</div>
             
             <div class="post-content" v-pre>
-              <p>调整字体大小：</p>
-<p><font size="1"> 要调整的字体<br/></p>
-<p><em>要调整字体大小改变数字“1”的大小即可</em></p>
-<p>调整字体居中:</p>
-<p align="center">要调整的字体</p>
-<p>调整字体居中+大小：</p>
-<p align="center"><font size="1">要调整的字体
-</p>
-<p>注释：</p>
-<!--注释-->
-<p>字体颜色：</p>
-<p><font color="red">调整的字体</font></p>
-<p>red改为其它单词可以更改颜色</p>
+              <pre><code class="language-html">调整字体大小：
+
+&lt;font size=&quot;1&quot;&gt; 要调整的字体&lt;br/&gt;
+
+*要调整字体大小改变数字“1”的大小即可*
+
+调整字体居中:
+
+&lt;p align=&quot;center&quot;&gt;要调整的字体&lt;/p&gt;
+
+调整字体居中+大小：
+
+&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;1&quot;&gt;要调整的字体
+&lt;/p&gt;
+
+注释：
+
+&lt;!--注释--&gt;
+
+字体颜色：
+
+&lt;font color=&quot;red&quot;&gt;调整的字体&lt;/font&gt;
+
+red改为其它单词可以更改颜色
+</code></pre>
 
             </div>
             
