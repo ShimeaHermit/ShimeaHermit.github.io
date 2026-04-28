@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="/favicon.ico?v=1777409054">
+<link rel="shortcut icon" href="/favicon.ico?v=1777409671">
 <link rel="stylesheet" href="/styles/main.css">
 
 
@@ -42,7 +42,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="/">
-        <img src="/images/avatar.png?v=1777409054" class="site-logo">
+        <img src="/images/avatar.png?v=1777409671" class="site-logo">
         <h1 class="site-title">Shimea&#39;s Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -152,9 +152,13 @@
                 <div class="post-abstract">
                   <p>看板娘仅在pc下可见</p>
 <p>基于up主“有云转晴”的教学制作的</p>
-<p>代码如下，插入indexl.html的<!-- raw HTML omitted --><!-- raw HTML omitted -->之间即可</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>代码如下，插入index.html的<code>&lt;head&gt;&lt;/head&gt;</code>之间即可：</p>
+<pre><code class="language-html">&lt;!--看板娘 - 自定义大小，隐藏对话框和对话框高度--&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+#waifu #live2d {
+  height: 300px!important;
+  width: 300px!importa...
+</code></pre>
 
                 </div>
               </div>
@@ -218,6 +222,11 @@ var app = new Vue({
 
 </script>
 
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
 
 
 

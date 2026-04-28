@@ -484,10 +484,11 @@ a {
   margin: 24px auto;
 }
 .post-detail .post-content p {
-  line-height: 1.725;
+  line-height: 2;
   margin-bottom: 24px;
   font-size: 18px;
   color: #495057;
+  text-indent: 2em;
 }
 .post-detail .post-content p code,
 .post-detail .post-content ul code,
@@ -764,4 +765,26 @@ a {
       body {
         background: #fff0f5;
       }
+    
+      <!--看板娘 - 自定义大小，隐藏对话框和对话框高度-->
+<style type="text/css">
+#waifu #live2d {
+  height: 300px!important;
+  width: 300px!important;
+}
+#waifu-tips {
+  top: -60px;
+  /*display:none !important; 隐藏对话框*/
+}
+</style>
+
+<!--看板娘加载指定模型-->
+<script>
+localStorage.setItem('modelId', '24');  /*选择角色*/
+localStorage.setItem('modelTexturesId', '1');  /*选择皮肤*/
+/*F12查看元素可查看对应角色和皮肤的代号*/
+</script>
+
+<!--配置看板娘左右位置-->
+<script src="https://api.itggg.cn/live2dnew/left/index.js"></script>
     
