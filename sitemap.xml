@@ -2,9 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://shimeahermit.github.io/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://shimeahermit.github.io/post/yuan-lai-ma-ma-qi-shi-shi-ji-de-wo-de-sheng-ri-de/</loc>
+    <lastmod>2026-05-06T00:03:44+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shimeahermit.github.io/post/yi-ge-ta-luo-pai-rang-wo-kai-shi-si-xin-la/</loc>
+    <lastmod>2026-05-03T00:00:24+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://shimeahermit.github.io/post/jin-tian-shi-wo-sheng-ri/</loc>
@@ -14,7 +26,7 @@
   </url>
   <url>
     <loc>https://shimeahermit.github.io/post/jin-tian-shi-wu-yi/</loc>
-    <lastmod>2026-05-01T20:02:53+08:00</lastmod>
+    <lastmod>2026-05-02T18:45:59+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -140,49 +152,49 @@
   </url>
   <url>
     <loc>https://shimeahermit.github.io/post/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shimeahermit.github.io/tags/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shimeahermit.github.io/archives/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shimeahermit.github.io/tag/ri-ji/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://shimeahermit.github.io/tag/wang-zhan-wei-hu/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://shimeahermit.github.io/tag/she-ying/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://shimeahermit.github.io/tag/xie-gei-ni/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://shimeahermit.github.io/links/</loc>
-    <lastmod>2026-05-02T18:43:59+08:00</lastmod>
+    <lastmod>2026-05-07T00:06:38+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
